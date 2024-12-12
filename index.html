@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Refund</title>
+</head>
+
+<body>
+  <main>
+    <img src="./img/logo.svg" alt="Convert logo" class="logo" />
+
+    <section>
+      <form>
+        <h1>Refund Request</h1>
+        <p>
+          Please enter the expense details to request a refund. The expense will be analyzed and refunded within 30
+          days.
+        </p>
+
+        <fieldset>
+          <legend>Expense Name</legend>
+          <input type="text" id="expense" name="expense" required />
+        </fieldset>
+
+        <div class="inputs-row">
+          <fieldset>
+            <legend>Category</legend>
+            <select id="category" name="category" required>
+              <option value="" disabled selected hidden>Select</option>
+              <option value="food">Food</option>
+              <option value="accommodation">Accommodation</option>
+              <option value="services">Services</option>
+              <option value="transport">Transportation</option>
+              <option value="others">Others</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Expense Amount</legend>
+            <input type="text" name="amount" id="amount" placeholder="$0.00" required />
+          </fieldset>
+        </div>
+
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <aside>
+        <header>
+          <p>
+            My Requests <i>&bullet;</i>
+            <span>0 expenses</span>
+          </p>
+          <h2><small>$</small>0.00</h2>
+        </header>
+
+        <ul>
+          <!-- <li class="expense">
+              <img src="./img/food.svg" alt="Expense type icon" />
+
+              <div class="expense-info">
+                <strong>Lunch</strong>
+                <span>Food</span>
+              </div>
+
+              <span class="expense-amount"><small>$</small>1,420.57</span>
+
+              <img src="./img/remove.svg" alt="Remove" class="remove-icon" />
+            </li> -->
+        </ul>
+      </aside>
+    </section>
+  </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
